@@ -11,8 +11,8 @@
 			</div>
 			<div class="HeaderButtons">
 					<button class="HeaderButton">Home</button> 
-				 	<button class="HeaderButton">Mapping Tutorials</button> 
-					<button class="HeaderButton">Modding Tutorials</button> 
+				 	<button class="HeaderButton">Mapping Tutorial</button> 
+					<button class="HeaderButton">Modding Tutorial</button> 
 					<button class="HeaderButton">About</button> 
 					
 			</div>
