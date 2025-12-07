@@ -1,7 +1,5 @@
 <body>
 	<div class="HeaderBar">
-			
-			
 			<div class="HeaderTitle">
 				<img src="resources/Evan_Logo.png" alt="Hi <3" class="HeaderBar">
 				
@@ -11,16 +9,24 @@
 			</div>
 			<div class="HeaderButtons">
 					<button class="HeaderButton">Home</button> 
-				 	<button class="HeaderButton">Mapping Tutorial</button> 
-					<button class="HeaderButton">Modding Tutorial</button> 
+				 	<button class="HeaderButton">Mapping Tutorials</button> 
+					<button class="HeaderButton">Modding Tutorials</button> 
 					<button class="HeaderButton">About</button> 
 					
 			</div>
+			<div class="HeaderSideBar">
+				<button class="HeaderSideBarTheme">
+					<img src="resources/light.png" alt="Hi <3" class="HeaderSideBarTheme">
+				</button>	
+			
+			</div>
 				
 	</div>
+	<title>Home</title>
+	<link rel="icon" href="resources/favicon.ico">
 	
 	<div align="center">
-		<p>test text<p>
+
 	</div>
 
 </body>
@@ -37,6 +43,8 @@
   	--color-Text: #F1F5F9;
   	--color-TextSubtle: #94A3B8;
 }
+
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -82,12 +90,40 @@ div.HeaderBar{
 
 
 
+div.HeaderSideBar{
+	float: right;
+	margin-top: -70px;
+	width: 40px;
+	padding: 2px;
+}
+
+button.HeaderSideBarTheme{
+	background: none;
+	width: 36px;
+	height: 36px;
+	border: 6px solid var(--color-Border);
+	border-radius: 100%;
+	transition-duration: 0.4s;
+}
+button.HeaderSideBarTheme:hover{
+	background-color: var(--color-Border);
+	border: 6px solid var(--color-TextSubtle);
+	border-radius: 20%;
+}
+img.HeaderSideBarTheme{
+	width: 30px;
+	height:30px;
+	border-radius: 100%;
+	margin-left: -7px;
+	margin-top: -4px;
+}
+
+
 div.HeaderButtons{
 	padding-top: 30px;
 	height: 100%;
 	
 }
-
 
 button.HeaderButton{
 	padding-top: 0px;
