@@ -5,7 +5,7 @@
 				
 				<strong class="HeaderBar">Evans Cool Tutorial</strong>
 				
-				<p class="HeaderBar">You better read all of it, or else (:<<p>
+				<p style="font-family: Arial; font-size: 20px"class="HeaderBar">You better read all of it, or else (:<<p>
 			</div>
 			<div class="HeaderButtons">
 					<button class="HeaderButton">Home</button> 
@@ -23,7 +23,7 @@
 				
 	</div>
 	<title>Home</title>
-	<link rel="icon" href="resources/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="resources/favicon.ico">
 	
 	<div align="center">
 
@@ -124,8 +124,8 @@ div.HeaderButtons{
 	height: 100%;
 	
 }
-
 button.HeaderButton{
+	font-family: Arial;
 	padding-top: 0px;
 	margin-left: 10px;
 	height: 50px;
