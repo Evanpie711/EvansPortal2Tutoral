@@ -36,4 +36,8 @@ p{
 	font-family: Arial;
 	color: var(--color-TextSubtle);
 }
+button{
+	font-family: Arial;
+	color: var(--color-TextSubtle);
+}
 

@@ -11,6 +11,27 @@ h1{
 	font-family: Arial;
 	color: var(--color-Text);
 }
+h2{
+	font-family: Arial;
+	color: var(--color-Text);
+}
+h3{
+	font-family: Arial;
+	color: var(--color-Text);
+}
+h4{
+	font-family: Arial;
+	color: var(--color-Text);
+}
+h5{
+	font-family: Arial;
+	color: var(--color-Text);
+}
+h6{
+	font-family: Arial;
+	color: var(--color-Text);
+}
+
 p{
 	font-family: Arial;
 	color: var(--color-TextSubtle);

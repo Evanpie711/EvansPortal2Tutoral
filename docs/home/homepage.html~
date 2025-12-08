@@ -8,12 +8,16 @@
 	
 	<div style="height: 800px; margin-top: 50px; margin-bottom: 80px">
 		<button style="float: left; margin-left: 18%;" class="HomeFloatingBox">
-			<h1 class="HomeFloatingBox">Mapping</h1>
-			<p>Do you feel like your cozy at home now? I do :D</p>
+			<div>			
+				<h1 class="HomeFloatingBox">Mapping</h1>
+				<p class="HomeFloatingBox">VVery cool mapping tutorals for you, and just you. And I want to go to bed now</p>
+			</div>		
 		</button>
 		<button style="float: right; margin-right: 18%;" class="HomeFloatingBox">
-			<h1 class="HomeFloatingBox">Modding</h1>
-			<p>Do you feel like your cozy at home now? I do :D</p>
+			<div>
+				<h1 class="HomeFloatingBox">Modding</h1>
+				<p class="HomeFloatingBox">PLEASE HELP ME PLEASE HELP ME PLEASE HELP ME, sorry the modding gets to you sometimes.</p>
+			</div>
 		</button>
 	</div>
 
@@ -30,12 +34,16 @@ div.ClassHomePage {
 	margin: -0px 0px -16px 0px;
 }
 button.HomeFloatingBox {
+	display: inline-flex;
+	vertical-align: top;
 	background-color: var(--color-Surface);
 	transition-duration: 0.4s;
 	border-radius: 20px;
 	width: 30%;
-	height: 90%;
+	height: 770px;
 	padding: 20px;
+	padding-top: 0px;
+	margin-bottom: 20px
 }
 button.HomeFloatingBox:hover {
 	background-color: var(--color-Elevated);
@@ -43,9 +51,15 @@ button.HomeFloatingBox:hover {
 	border-width: 10px;
 }
 h1.HomeFloatingBox{
-	font-stretch: 100%;
-	margin-top: -420px;
+	vertical-align: top;
+	font-size: 6vw;
+	
 }
+p.HomeFloatingBox{
+	vertical-align: text-top;
+	margin-top: -4vw;
+	font-size: 2vw;
 
+}
 </style>
 
