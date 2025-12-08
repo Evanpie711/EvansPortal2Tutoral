@@ -1,4 +1,8 @@
+<script src="scripts/pageload.js"></script>
+
+
 <body>
+	<!-- header bar at the top -->
 	<div class="HeaderBar">
 			<div class="HeaderTitle">
 				<img src="resources/Evan_Logo.png" alt="Hi <3" class="HeaderBar">
@@ -8,7 +12,7 @@
 				<p style="font-family: Arial; font-size: 20px"class="HeaderBar">You better read all of it, or else (:<<p>
 			</div>
 			<div class="HeaderButtons">
-					<button class="HeaderButton">Home</button> 
+					<button class="HeaderButton" onclick="loadhtml('home/homepage.html')">Home</button> 
 				 	<button class="HeaderButton">Mapping Tutorials</button> 
 					<button class="HeaderButton">Modding Tutorials</button> 
 					<button class="HeaderButton">About</button> 
@@ -22,16 +26,59 @@
 			</div>
 				
 	</div>
+	
+	
+	
+	
+	<!-- title stuff -->
 	<title>Home</title>
 	<link rel="icon" type="image/x-icon" href="resources/favicon.ico">
 	
-	<div align="center">
-
+	
+	
+	
+	
+	<!-- content will be loaded here -->
+	<div align="center" id="ContentContainer">
+		<h1>Content goes in this header</h1>
+		<p style="margin-bottom: 65%;">Lots your learning right now, go read vdc or smh</p>
 	</div>
-
+	
+	
+	
+	
+	
+	
+	<!-- The footer for the website, with footer shit -->
+	<div class="Footer">
+	
+		<div class="FooterList">
+			<h2 class="FooterList">Header 1</h2>
+			<ul class="FooterList">
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+							<li>Item 5</li>
+							<li>Item 6</li>
+			</ul>
+		</div>
+		
+		<div class="FooterList">
+			<h2 class="FooterList">Header 2</h2>
+			<ul class="FooterList">
+							<li>Item 1</li>
+							<li>Item 2</li>
+							<li>Item 3</li>
+							<li>Item 4</li>
+							<li>Item 5</li>
+							<li>Item 6</li>
+			</ul>
+		</div>
+		
+		
+	</div>
 </body>
-
-
 
 
 <style>
@@ -148,6 +195,34 @@ button.HeaderButton:hover{
 	border-radius: 2px 2px 0px 0px;
 	color: var(--color-Text);
 	
+}
+
+/*Footer*/
+div.Footer{
+	padding: 14px;
+	margin: 0px 20px 0px 0px;
+	background-color: var(--color-Backround);
+ 	border-top: 10px solid var(--color-Border);
+ 	height: 220px;
+ 	width: 100%;
+}
+
+
+
+div.FooterList {
+	float: left;
+	margin-left: 20px;
+	margin-right: 80px;
+}
+h2.FooterList {
+	color: var(--color-Text);
+	font-family: Arial Black; 
+}
+ul.FooterList {
+	font-family: Arial; 
+	margin-top: -20px;
+	margin-left: -19px;
+	color: var(--color-TextSubtle);
 }
 
 
