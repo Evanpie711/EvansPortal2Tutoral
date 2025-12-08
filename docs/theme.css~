@@ -1,0 +1,18 @@
+:root {
+  	--color-Backround: #0F172A;
+	--color-Surface: #1E293B;
+	--color-Elevated: #334155;
+  	--color-Border: #475569;
+  	--color-Text: #F1F5F9;
+  	--color-TextSubtle: #94A3B8;
+}
+
+h1{
+	font-family: Arial;
+	color: var(--color-Text);
+}
+p{
+	font-family: Arial;
+	color: var(--color-TextSubtle);
+}
+

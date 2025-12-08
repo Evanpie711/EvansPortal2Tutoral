@@ -1,6 +1,48 @@
-<body>
 
-<h1>This is the home page</h1>
-<p>Do you feel like your cozy at home now? I do :D</p>
+<div class="ClassHomePage" style="padding: 20px">
 
-</body>
+	<div>
+		<h1 class="ClassHomePage">This is the home page</h1>
+		<p class="ClassHomePage">Do you feel like your cozy at home now? I do :D</p>
+	</div>
+	
+	<div style="height: 600px; margin-top: 50px; margin-bottom: 80px">
+		<button style="float: left; margin-left: 25%;" class="HomeFloatingBox">
+			<h1>This is the home page</h1>
+			<p>Do you feel like your cozy at home now? I do :D</p>
+		</button>
+		<button style="float: right; margin-right: 25%;" class="HomeFloatingBox">
+			<h1>This is the home page</h1>
+			<p>Do you feel like your cozy at home now? I do :D</p>
+		</button>
+	</div>
+
+	
+	
+</div>
+<style>
+
+div.ClassHomePage {
+	background-color: var(--color-Backround);
+	margin-bottom: 20px;
+	margin-top: 40px;
+	width: 100%;
+	margin: -0px 0px -16px 0px;
+}
+button.HomeFloatingBox {
+	background-color: var(--color-Surface);
+	transition-duration: 0.4s;
+	border-radius: 20px;
+	width: 20%;
+	height: 600px;
+	padding: 20px;
+}
+button.HomeFloatingBox:hover {
+	background-color: var(--color-Elevated);
+	border-radius: 20px;
+	border-width: 10px;
+}
+
+
+</style>
+
