@@ -1,0 +1,49 @@
+
+
+<div class="background" style="padding: 20px; height: 400px; ">
+
+	<div style="">
+		<h1 class="abouttext aboutleft">Yet to be named Tutorials</h1>
+		<p class="abouttext aboutleft">name is meant to be a community driven tutorial series for people who are just starting 
+		and people that have used source for years.</p>
+	</div>
+	
+	<div style="">
+		<h1 class="abouttext aboutright">Yet to be named Tutorials</h1>
+		<p class="abouttext aboutright">name is meant to be a community driven tutorial series for people who are just starting 
+		and people that have used source for years.</p>
+	</div>
+
+	
+	
+</div>
+
+<style>
+p.abouttext{
+	margin-top: -20px;
+	font-size: 23px;
+	max-width: 40%;
+}
+
+
+p.aboutleft{
+	margin-left: -56%;
+	text-align: left;
+}
+h1.aboutleft{
+	text-align: left;
+
+}
+
+
+p.aboutright{
+	margin-left: 53%;
+	text-align: left;
+}
+h1.aboutright{
+	text-align: right;
+	margin-right: 40px;
+}
+
+
+</style>>

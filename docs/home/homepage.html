@@ -6,19 +6,28 @@
 		<p class="ClassHomePage">Do you feel like your cozy at home now? I do :D</p>
 	</div>
 	
-	<div style="height: 800px; margin-top: 50px; margin-bottom: 80px">
-		<button style="float: left; margin-left: 18%;" class="HomeFloatingBox">
+	<div style="height: 58vw; margin-top: 50px; margin-bottom: 10px;">
+		<button style="float: left; margin-left: 18%;" class="HomeFloatingBox" onclick="loadhtml('home/contentbase.html')">
 			<div>			
 				<h1 class="HomeFloatingBox">Mapping</h1>
 				<p class="HomeFloatingBox">VVery cool mapping tutorals for you, and just you. And I want to go to bed now</p>
-			</div>		
+				<img class="HomeFloatingBox" src="/resources/hammer_logo.png" alt="Nah lul">
+			</div>
+					
 		</button>
-		<button style="float: right; margin-right: 18%;" class="HomeFloatingBox">
+		<button style="float: right; margin-right: 18%;" class="HomeFloatingBox" onclick="loadhtml('home/contentbase.html')">
 			<div>
 				<h1 class="HomeFloatingBox">Modding</h1>
 				<p class="HomeFloatingBox">PLEASE HELP ME PLEASE HELP ME PLEASE HELP ME, sorry the modding gets to you sometimes.</p>
+				<img style="margin-top: 40px;"class="HomeFloatingBox" src="/resources/hammer_logo.png" alt="Nah lul">
 			</div>
 		</button>
+	</div>
+	
+	<div>
+		<h1 class="ClassHomePage">I should put something down here, don't know what</h1>
+		<p class="ClassHomePage">Well, Do you like the website?</p>
+	
 	</div>
 
 	
@@ -40,7 +49,7 @@ button.HomeFloatingBox {
 	transition-duration: 0.4s;
 	border-radius: 20px;
 	width: 30%;
-	height: 770px;
+	height: 53vw;
 	padding: 20px;
 	padding-top: 0px;
 	margin-bottom: 20px
@@ -49,6 +58,8 @@ button.HomeFloatingBox:hover {
 	background-color: var(--color-Elevated);
 	border-radius: 20px;
 	border-width: 10px;
+	padding: 15px;
+	padding-top: 0px;
 }
 h1.HomeFloatingBox{
 	vertical-align: top;
@@ -60,6 +71,11 @@ p.HomeFloatingBox{
 	margin-top: -4vw;
 	font-size: 2vw;
 
+}
+img.HomeFloatingBox{
+	margin-top: 70px;
+	width: 24vw;
+	height: 24vw;
 }
 </style>
 

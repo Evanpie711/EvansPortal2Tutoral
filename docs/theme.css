@@ -40,4 +40,17 @@ button{
 	font-family: Arial;
 	color: var(--color-TextSubtle);
 }
-
+img{
+	color: var(--color-TextSubtle);
+	
+}
+div.background{
+	background-color: var(--color-Backround);
+	width: 100%;
+	min-height: 100px; 
+}
+div{
+	border-color: var(--color-Border);
+	border-style: solid;
+	border: none;
+}
