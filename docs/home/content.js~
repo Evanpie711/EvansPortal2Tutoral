@@ -1,0 +1,41 @@
+let resize_on = false;
+const interval_resize = setInterval(null, null);
+let contentleft;
+let mousex = 0;
+
+let ifcontentload=false;
+
+
+function resize_content() {
+	if (resize_on==false) {
+		return;				
+	}
+	let sizex = ((mousex-5) / document.documentElement.clientWidth)*100 + '%';
+	//console.log(sizex);
+	contentleft.style.width = sizex;
+	setTimeout(resize_content, 10);
+} 
+
+
+function resize_down() {
+	if(ifcontentload==false){contentleft = document.getElementById("contentleft"); console.log(contentleft);}
+	resize_on = true;
+	resize_content();
+	//console.log("resize down");
+}
+
+function resize_up() {
+	resize_on = false;
+	//console.log("up");
+}
+window.onload = function () {
+	
+	document.addEventListener('mouseup', function (event) {
+			resize_up();
+			
+	});
+	document.addEventListener('mousemove', function(event) {
+    //console.log('Mouse X:', event.clientX, 'Mouse Y:', event.clientY);
+    	mousex = event.clientX;
+	});
+}

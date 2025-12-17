@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="theme.css">
 </head>
 <script src="scripts/pageload.js"></script>
-
+	<script src="home/content.js"></script>
 
 <body style="min-width: 1001px;">
 	<!-- header bar at the top -->
