@@ -1,41 +1,35 @@
-let resize_on = false;
-const interval_resize = setInterval(null, null);
-let contentleft;
-let mousex = 0;
 
-let ifcontentload=false;
+const sections = document.querySelectorAll('section')
 
+sections.forEach((section) => {
+  const handle = section.querySelector('a.handle')
+  const content = section.querySelector('div.content')
 
-function resize_content() {
-	if (resize_on==false) {
-		return;				
-	}
-	let sizex = ((mousex-5) / document.documentElement.clientWidth)*100 + '%';
-	//console.log(sizex);
-	contentleft.style.width = sizex;
-	setTimeout(resize_content, 10);
-} 
+  handle.addEventListener('mousedown', (event) => {
+    event.preventDefault()
 
+    const drag = (event) => {
+      event.preventDefault()
 
-function resize_down() {
-	if(ifcontentload==false){contentleft = document.getElementById("contentleft"); console.log(contentleft); ifcontentload=true;}
-	resize_on = true;
-	resize_content();
-	//console.log("resize down");
-}
+      const left = (100 * event.pageX) / window.innerWidth
+      const right = 100 - left
 
-function resize_up() {
-	resize_on = false;
-	//console.log("up");
-}
-window.onload = function () {
-	
-	document.addEventListener('mouseup', function (event) {
-			resize_up();
-			
-	});
-	document.addEventListener('mousemove', function(event) {
-    //console.log('Mouse X:', event.clientX, 'Mouse Y:', event.clientY);
-    	mousex = event.clientX;
-	});
-}
+      content.style.gridTemplateColumns = `minmax(400px, ${left}%) minmax(400px, ${right}%)`
+      handle.style.left = `max(400px, ${left}%)`
+    }
+
+    const mouseup = (event) => {
+      event.preventDefault()
+
+      document.removeEventListener('mousemove', drag)
+      document.removeEventListener('mouseup', mouseup)
+    }
+
+    document.addEventListener('mousemove', drag)
+    document.addEventListener('mouseup', mouseup)
+  })
+
+  handle.addEventListener('click', (event) => {
+    event.preventDefault()
+  })
+})

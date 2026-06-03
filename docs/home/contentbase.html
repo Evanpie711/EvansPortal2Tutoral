@@ -1,33 +1,39 @@
 
-<script src="home/content.js"></script>
+
 
 <div class="background" style=" min-height: 700px; display: table;">
 
-	<div style="display: table-row; height: 100%; min-height: 400px;">
-	
-	
-		<div class="contentleft" id="contentleft">
-			<div class="contentlistb">
-				<div style="height: 100%;">
-					<h1>This is the home page</h1>
-					<p>Do you feel like your cozy at home now? I do :D</p>
+	<section>
+		<a class="handle" href="#"></a>
+
+		<div class="content" >
 		
-				</div>	
+		
+			<div class="">
+				
+			
+				<div class="contentlistb">
+					<div style="height: 100%;">
+						<h1>This is the home page</h1>
+						<p>Do you feel like your cozy at home now? I do :D</p>
+					
+					</div>	
+				</div>
 			</div>
-		</div>
-		<button class="contentright" onmousedown="resize_down();" onmouseup="resize_up();"><span class="unselectable">||</span></button>
 		
-		<div class="contentright">
-			<div style="">
-					<h1>This is the home page</h1>
-					<p>Do you feel like your cozy at home now? I do :D</p>
-		
+			<div class="">
+				<div style="">
+						<h1>This is the home page</h1>
+						<p>Do you feel like your cozy at home now? I do :D</p>
+				
+				</div>
 			</div>
+			
 		</div>
-		
-	</div>
 	
-	
+	</section>	
+
+	<script src="home/content.js"></script>
 </div>
 
 <style>
@@ -56,23 +62,28 @@ div.contentright{
 
 div.contentleft{
 	display: table-cell;
-	min-width: 10%;
-	max-width: 70%;
-	padding: 5px;
-	padding-right: 10px;
+	padding: 20px;
 	border-right: solid;
 	border-color: var(--color-Border);
-	height: 100%;
 }
 
-div.contentlistb{
-	border: solid;
-	border-color: var(--color-Border);
-	border-radius: 20px;
-	border-width: 5px;
-	height: 100%;
+section a.handle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 58px;
+	transform: translate(-50%, 0);
+	z-index: 1;
+	cursor: ew-resize;
 
 
+	background-color: blue;
+}
+
+section div.content {
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 
 </style>
