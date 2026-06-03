@@ -33,27 +33,21 @@
 
 <style>
 
-button.contentright{
-	margin-left: -7px;
-	float: top;
+div.contentright{
 	width: 10px;
-	min-height: 200px;
+	min-height: 700px;
 	height: 100%;
 	background: none;
-	border: none;
+	border: solid;
+	border-color: var(--color-Border);
 	transition-duration: 0.1s;
 }
-button.contentright:hover{
+div.contentright:hover{
 	background-color: --var(--color-Elevated);
 	width: 15px;
 	font-size: 20px;
 }
-div.contentright{
-	display: table-cell;
-	padding: 20px;
-	border-left: solid;
-	border-color: var(--color-Border);
-}
+
 
 div.contentleft{
 	display: table-cell;
@@ -63,23 +57,38 @@ div.contentleft{
 }
 
 section a.handle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 48px;
-  transform: translate(-50%, 0%);
-  z-index: 1;
+  	position: absolute;
+  	top: 95px;
+  	bottom: 0;
+  	left: 50%;
+ 	width: 60px;
+  	transform: translate(-50%, 0%);
+  	z-index: 1;
 
-  cursor: ew-resize;
+  	cursor: ew-resize;
+
+	background: none;
+	border: none;
+	border-color: var(--color-Border);
+	transition-duration: 0.5s;
+}
+section a.handle:hover {
+	border: none;
+	width: 80px;
+	font-size: 20px;
 }
 
 section div.content div.copy {
   padding: 2rem;
+  border-left: solid;
+  border-right: solid;
+  min-height: 700px;
+  border-color: var(--color-Border);
 }
 
 section div.content {
 	display: grid;
+	min-height: 700px;
 	grid-template-columns: 50% 50%;
 }
 
