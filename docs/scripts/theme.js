@@ -22,11 +22,13 @@ function setlight() {
 function switchtheme(){
     if (currenttheme == false){
         setlight();
+        document.getElementById("themeicon").src = "resources/dark.png";
         currenttheme = true;
         return;
     }
     if (currenttheme){
         setdark();
+        document.getElementById("themeicon").src = "resources/light.png";
         currenttheme = false;
         return;
     }
