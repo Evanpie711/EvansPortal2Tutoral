@@ -46,7 +46,7 @@ img{
 }
 div.background{
 	background-color: var(--color-Backround);
-	width: 100%;
+	
 	min-height: 100px; 
 }
 div{
