@@ -29,3 +29,9 @@ look cool picture of text image (i need to find out how to do text wraping aroun
 
 > look at this, im containted
 
+why is there extra math????
+
+$$
+\sqrt{3x-1}+(1+x)^2
+$$
+

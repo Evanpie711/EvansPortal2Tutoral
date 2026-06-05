@@ -19,9 +19,13 @@
 			</div>
 		
 			<div class="copy">
-				<zero-md src="docsrc/mapping/default.md"></zero-md>
-				
-				<img style="float: right;" src="resources/hammer_logo.png"></img>
+				<zero-md src="docsrc/mapping/default.md">
+					<template>
+						<link rel="stylesheet" href="theme.css" />
+					</template>
+				</zero-md>
+				<p>text</p>
+
 			</div>
 			
 		</div>
@@ -84,6 +88,7 @@ section div.content div.copy {
   border-right: solid;
   min-height: 700px;
   border-color: var(--color-Border);
+  min-width: 100px;
 }
 
 section div.content {

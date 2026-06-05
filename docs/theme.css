@@ -10,49 +10,90 @@
 h1{
 	font-family: Arial;
 	color: var(--color-Text);
+	transition: color 0.4s ease;
 }
 h2{
 	font-family: Arial;
 	color: var(--color-Text);
+	transition: color 0.4s ease;
 }
 h3{
 	font-family: Arial;
 	color: var(--color-Text);
+	transition: color 0.4s ease;
 }
 h4{
 	font-family: Arial;
 	color: var(--color-Text);
+	transition: color 0.4s ease;
 }
 h5{
 	font-family: Arial;
 	color: var(--color-Text);
+	transition: color 0.4s ease;
 }
 h6{
 	font-family: Arial;
 	color: var(--color-Text);
+	transition: color 0.4s ease;
 }
 
+ul{
+	font-family: Arial;
+	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+}
+ol{
+	font-family: Arial;
+	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+}
 p{
 	font-family: Arial;
 	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
 }
+li{
+	font-family: Arial;
+	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+}
+hr{
+	font-family: Arial;
+	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+}
+
+math{
+	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+}
+
+span.katex-display{
+	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+}
+
 button{
 	font-family: Arial;
 	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
 }
 img{
 	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
 	
 }
 div.background{
 	background-color: var(--color-Backround);
-	
+	transition: color 0.4s ease;
 	min-height: 100px; 
 }
 div{
 	border-color: var(--color-Border);
 	border-style: solid;
 	border: none;
+	transition: color 0.4s ease;
 }
 .unselectable {
     -webkit-touch-callout: none;
