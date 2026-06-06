@@ -10,6 +10,7 @@ function setdark() {
     document.documentElement.style.setProperty('--color-TextSubtle', '#94A3B8');
 
     document.documentElement.style.setProperty('--color-link', '#d4da82');
+    document.documentElement.style.setProperty('--color-linkdim', '#d4da829');
 }
 function setlight() {
     document.documentElement.style.setProperty('--color-Backround', '#f0f4ff');
@@ -20,6 +21,7 @@ function setlight() {
     document.documentElement.style.setProperty('--color-TextSubtle', '#202327');
 
     document.documentElement.style.setProperty('--color-link', '#8377ec');
+    document.documentElement.style.setProperty('--color-link', '#8377ec9d');
 }
 
 function switchtheme(){
