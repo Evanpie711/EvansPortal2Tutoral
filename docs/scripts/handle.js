@@ -13,8 +13,8 @@ sections.forEach((section) => {
       const left = (100 * event.pageX) / window.innerWidth
       const right = 100 - left
 
-      content.style.gridTemplateColumns = `minmax(400px, ${left}%) minmax(400px, ${right}%)`
-      handle.style.left = `max(400px, ${left}%)`
+      content.style.gridTemplateColumns = `minmax(150px, ${left}%) minmax(150px, ${right}%)`
+      handle.style.left = `max(150px, ${left}%)`
     }
 
     const mouseup = (event) => {

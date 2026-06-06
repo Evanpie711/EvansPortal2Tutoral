@@ -9,6 +9,13 @@
 	--color-link: #d4da82;
 	--color-linkdim: #d4da829c;
 
+	--color-shared: #2672c9;
+	--color-map: #e9aa36;
+	--color-mod: #e94b36;
+
+	--color-shared-dim: #2672c991;
+	--color-map-dim: #e9aa3681;
+	--color-mod-dim: #e94b369d;
 }
 
 
@@ -141,11 +148,19 @@ div{
 }
 
 p.pagelist {
+	padding-left: 4px;
+}
+
+a{
+	font-family: Arial;
 	color: var(--color-link);
+	transition: color 0.4s ease;
+	text-align: left;
 }
 
 
 
+/*list for navigation thingy that left side i cannot remember name of*/
 
 details {
 
@@ -153,6 +168,9 @@ details {
   	color: var(--color-TextSubtle);
 	transition: color 0.4s ease;
 	margin-bottom: 0.5em;
+	border-color: var(--color-link);
+
+	transition: open 0.2s ease;
 }
 
 summary {
@@ -166,7 +184,7 @@ summary {
 	border-left: 2px dotted var(--color-Border);
 	border-color: var(--color-linkdim);
 
-
+	transition: open 0.2s ease;
 
 	max-height: 1em;
 }
@@ -176,11 +194,119 @@ details[open] {
 	padding-left: 1em;
   	color: var(--color-TextSubtle);
 	transition: color 0.4s ease;
-	border-left: 2px solid var(--color-link);
+	border-left: 2px solid;
 }
 
 details[open] summary {
   	margin-bottom: 0.5em;
   	color: var(--color-TextSubtle);
 	transition: color 0.4s ease;
+}
+
+
+
+/*mapping - orange*/
+summary.map {
+  	margin: -0.5em -0.5em 0;
+  	padding: 0.2em;
+  	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+	text-align: left;
+	font-size: smaller;
+
+	border-left: 2px dotted var(--color-Border);
+	border-color: var(--color-map-dim);
+
+
+
+	max-height: 1em;
+}
+summary.map:hover {
+	color: var(--color-map);
+}
+
+details.map {
+
+  	padding: 0.5em 0.5em 0;
+  	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+	margin-bottom: 0.5em;
+	border-color: var(--color-map);
+}
+
+p.map {
+	color: var(--color-map-dim);
+}
+p.map:hover {
+	color: var(--color-map);
+}
+/*modding - red*/
+summary.mod {
+  	margin: -0.5em -0.5em 0;
+  	padding: 0.2em;
+  	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+	text-align: left;
+	font-size: smaller;
+
+	border-left: 2px dotted var(--color-Border);
+	border-color: var(--color-mod-dim);
+
+
+
+	max-height: 1em;
+}
+summary.mod:hover {
+	color: var(--color-mod);
+}
+
+details.mod {
+
+  	padding: 0.5em 0.5em 0;
+  	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+	margin-bottom: 0.5em;
+	border-color: var(--color-mod);
+}
+
+p.mod {
+	color: var(--color-mod-dim);
+}
+p.mod:hover {
+	color: var(--color-mod);
+}
+/*shared - blue*/
+summary.sha {
+  	margin: -0.5em -0.5em 0;
+  	padding: 0.2em;
+  	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+	text-align: left;
+	font-size: smaller;
+
+	border-left: 2px dotted var(--color-Border);
+	border-color: var(--color-shared-dim);
+
+
+
+	max-height: 1em;
+}
+summary.sha:hover {
+	color: var(--color-shared);
+}
+
+details.sha {
+
+  	padding: 0.5em 0.5em 0;
+  	color: var(--color-TextSubtle);
+	transition: color 0.4s ease;
+	margin-bottom: 0.5em;
+	border-color: var(--color-shared);
+}
+
+p.sha {
+	color: var(--color-shared-dim);
+}
+p.sha:hover {
+	color: var(--color-shared);
 }

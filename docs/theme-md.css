@@ -1,11 +1,3 @@
-:root {
-  	--color-Backround: #0F172A;
-	--color-Surface: #1E293B;
-	--color-Elevated: #334155;
-  	--color-Border: #475569;
-  	--color-Text: #F1F5F9;
-  	--color-TextSubtle: #94A3B8;
-}
 
 h1{
 	font-family: Arial;
@@ -79,6 +71,13 @@ math{
 	color: var(--color-TextSubtle);
 	transition: color 0.4s ease;
 	
+}
+
+a{
+	font-family: Arial;
+	color: var(--color-link);
+	transition: color 0.4s ease;
+	text-align: left;
 }
 
 span.katex-display{
