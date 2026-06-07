@@ -1,0 +1,59 @@
+{
+ "1": {
+  "location": "/docsrc/mapping",
+  "name": "mapping",
+  "path": "/docsrc",
+  "type": "folder"
+ },
+ "2": {
+  "location": "/docsrc/modding",
+  "name": "modding",
+  "path": "/docsrc",
+  "type": "folder"
+ },
+ "3": {
+  "location": "/docsrc/shared",
+  "name": "shared",
+  "path": "/docsrc",
+  "type": "folder"
+ },
+ "4": {
+  "location": "/docsrc/shared\\default.md",
+  "name": "default",
+  "path": "/docsrc/shared",
+  "type": "file",
+  "ext": ".md"
+ },
+ "5": {
+  "location": "/docsrc/shared\\definitions",
+  "name": "definitions",
+  "path": "/docsrc/shared",
+  "type": "folder"
+ },
+ "6": {
+  "location": "/docsrc/modding\\default.md",
+  "name": "default",
+  "path": "/docsrc/modding",
+  "type": "file",
+  "ext": ".md"
+ },
+ "7": {
+  "location": "/docsrc/modding\\definitions",
+  "name": "definitions",
+  "path": "/docsrc/modding",
+  "type": "folder"
+ },
+ "8": {
+  "location": "/docsrc/mapping\\default.md",
+  "name": "default",
+  "path": "/docsrc/mapping",
+  "type": "file",
+  "ext": ".md"
+ },
+ "9": {
+  "location": "/docsrc/mapping\\definitions",
+  "name": "definitions",
+  "path": "/docsrc/mapping",
+  "type": "folder"
+ }
+}

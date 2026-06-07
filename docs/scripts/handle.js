@@ -1,3 +1,6 @@
+//thank you too the https://www.youtube.com/watch?v=wKZTD9mtstc
+
+
 const sections = document.querySelectorAll('section')
 
 sections.forEach((section) => {

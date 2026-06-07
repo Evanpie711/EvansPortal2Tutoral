@@ -9,13 +9,13 @@
 	--color-link: #d4da82;
 	--color-linkdim: #d4da829c;
 
-	--color-shared: #2672c9;
+	--color-shared: #4291ec;
 	--color-map: #e9aa36;
-	--color-mod: #e94b36;
+	--color-mod: #f54129;
 
 	--color-shared-dim: #2672c991;
 	--color-map-dim: #e9aa3681;
-	--color-mod-dim: #e94b369d;
+	--color-mod-dim: #c945339d;
 }
 
 
@@ -149,6 +149,10 @@ div{
 
 p.pagelist {
 	padding-left: 4px;
+	transition: color 1s ease;
+}
+p.pagelist:hover {
+	transition: color 0.1s ease;
 }
 
 a{
@@ -200,7 +204,8 @@ details[open] {
 details[open] summary {
   	margin-bottom: 0.5em;
   	color: var(--color-TextSubtle);
-	transition: color 0.4s ease;
+	transition: color 0.1s ease-in;
+	transition: color 2s ease-out;
 }
 
 
